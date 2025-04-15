@@ -1,0 +1,14 @@
+- name: Update system packages
+  pacman:
+    update_cache: yes
+    upgrade: yes
+
+- name: Install basic utilities
+  pacman:
+    name:
+      - git
+      - curl
+      - wget
+      - unzip
+      - make
+    state: present

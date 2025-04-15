@@ -1,0 +1,6 @@
+- name: Build the Rust project
+  shell: |
+    source $HOME/.cargo/env
+    cargo build --release
+  args:
+    chdir: "{{ ansible_env.HOME }}/education/devenv-example/advent-of-code-2024-rust"
